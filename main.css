@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+35,207cca+66,7db9e8+100 */
+  background: #1e5799;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 35%, #207cca 66%, #7db9e8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1e5799 0%, #2989d8 35%, #207cca 66%, #7db9e8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1e5799 0%, #2989d8 35%, #207cca 66%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
+  /* IE6-9 */
+  font-family: arial, 'sans serif';
+  font-size: 18px;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  color: #BA3771;
+  color: #00d;
+  text-align: center;
+  text-shadow: 3px 3px 2px rgba(229, 186, 255, 1);
+  font-size: 2.5rem;
+  margin: .2em 0;
+}
+
+.wrapper-app {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.streamer-item {
+  background-color: #ffe;
+  border-radius: 5px;
+  /*border: 2px solid peru;*/
+  box-shadow: 3px 3px 5px #444;
+  margin-bottom: 5px;
+  padding: .5rem;
+}
+
+.wrapper-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+
+.streamer-name {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: .5em;
+  width: 300px;
+}
+
+.streamTitle {
+  background-color: #EB6E23;
+  color: white;
+  font-size: .8rem;
+  padding-left: .5em;
+  line-height: 1.2rem;
+}
+
+.selectors {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .3em;
+}
+
+.selector {
+  background-color: #ffe;
+  line-height: 1.5;
+  text-align: center;
+  flex-grow: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.selector:hover {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #EB6E23;
+}
+
+.search-streamer {
+  width: 100%;
+  border-radius: 1em;
+  height: 2em;
+  padding-left: 1em;
+  margin-bottom: 5px;
+}

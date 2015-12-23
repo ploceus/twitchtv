@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Twitchtv</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper-app">
+	  <h1 class="title">Twitch Status</h1>
+	  <!-- header -->
+	  <div class="selectors">
+	    <span id='all' class="selector" class="selected">All</span>
+	    <span id='online' class="selector">On</span>
+	    <span id='offline' class="selector">Off</span>
+	  </div>
+	  <!-- busqueda -->
+	  <div id="search">
+
+	    <input type="text" id="busqueda" class="search-streamer" placeholder="Search a streamer">
+	  </div>
+	  <!-- Lista de streamers -->
+	  <ul id="streamers" class="streamers">
+	    <template id="template--streamer">
+	      <li class="streamer-item">
+	        <a data-url href="">
+	          <div class="wrapper-details">
+	            <img data-logo src="" alt="" class="logo" height="50px" width="50px">
+	            <span data-name class="streamer-name"></span>
+	            <span data-streaming class="streamer-conn fa  fa-2x"></span>
+	          </div>
+	          <p data-status class="streamTitle"></p>
+	        </a>
+	      </li>
+	    </template>
+	  </ul>
+	</div>
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script> -->
+	<script src="main.js"></script>
+</body>
+						
+</html>
