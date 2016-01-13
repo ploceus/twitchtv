@@ -17,30 +17,35 @@
 	  </div>
 	  <!-- busqueda -->
 	  <div id="search">
-
 	    <input type="text" id="busqueda" class="search-streamer" placeholder="Search a streamer">
 	  </div>
-	  <!-- Lista de streamers -->
-	  <ul id="streamers" class="streamers">
-	    <template id="template--streamer">
-	      <li class="streamer-item">
-	        <a data-url href="">
+
+		<!--Place to render de post-->
+		<ul id="streamers" class="streamers"></ul>
+
+	  
+
+
+	
+	  <!-- Template Handlebars Lista de streamers -->
+	  <script id="streamer-item-template" type="text/x-handlebars-template">
+			<li class="streamer-item">
+	        <a data-url href="{{url}}">
 	          <div class="wrapper-details">
-	            <img data-logo src="" alt="" class="logo" height="50px" width="50px">
-	            <span data-name class="streamer-name"></span>
-	            <span data-streaming class="streamer-conn fa  fa-2x"></span>
+	            <img data-logo src="{{logo}}" alt="" class="logo" height="50px" width="50px">
+	            <span data-name class="streamer-name">{{{name}}}</span>
+	            <span data-streaming class="streamer-conn fa  fa-2x">{{{status}}}</span>
 	          </div>
-	          <p data-status class="streamTitle"></p>
+	          <p data-status class="streamTitle">{{{streamTitle}}}</p>
 	        </a>
 	      </li>
-	    </template>
-	  </ul>
-	</div>
+	</script>
 
-
+	<!-- javaScript			 -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!-- <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 	<script src="main.js"></script>
+	
 </body>
 						
 </html>

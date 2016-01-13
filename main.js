@@ -78,22 +78,23 @@ $(document).ready(function() {
         });
     });
   }
-  // Activate template html for streamer item.
-  function activateTemplate(id) {
-    var t = document.querySelector(id);
-    return document.importNode(t.content, true);
-  }
+
   // Render template for each item.
   function renderTemplate(streamer) {
-    var clone = activateTemplate('#template--streamer');
-    // Pinta los datos
-    clone.querySelector('[data-url').href = streamer.url;
-    clone.querySelector('[data-logo]').src = streamer.logo;
-    clone.querySelector('[data-name]').innerHTML = streamer.name;
-    clone.querySelector('[data-streaming]').innerHTML = streamer.status;
-    clone.querySelector('[data-status]').innerHTML = streamer.streamTitle;
+    // Grab the template script
+    var theTemplateScript = $("#streamer-item-template").html();
 
-    $('#streamers').append(clone);
+    // Compile the template
+    var theTemplate = Handlebars.compile(theTemplateScript);
+
+    // Define our data object
+    var context= streamer;
+
+    // Pass our data to the template
+    var theCompiledHtml = theTemplate(context);
+
+    // Add the compiled html to the page
+    $('#streamers').append(theCompiledHtml);
   }
   // Reder of the items 
   function toRender() {
