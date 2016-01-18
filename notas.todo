@@ -1,29 +1,37 @@
-Client id: rg97j1bh7li9ibd8ihweq6qkt61elmf
+Twitchtv version B (handlebars): 
+  ✔ Solucionar problemas con el <template> de html5 @done (05-01-16 18:23)
+  ✔ Se renderiza el código no los iconos. @done (06-01-16 10:05)
+    Se corrigio con el uso de triple {{{}}}
+  ✔ En los cerrados no se ve el nombre. @done (05-01-16 18:35)
 
+
+Client id: rg97j1bh7li9ibd8ihweq6qkt61elmf
 Usar la API de Twitch tv:
   ✔ Crear cuenta. @done (01-12-15 17:28)
-✔ Registrar la app @done (01-12-15 17:28)
-✔ url de redirección puede ser localhost. @done (01-12-15 17:24)
-✔ clave publica  @done (01-12-15 17:24)
-✔ Formulario de busqueda usuarios @done (08-12-15 15:57)
-✔ ocultar los resultados que no coinciden @done (08-12-15 15:57)
-✔ Selector de all or streaming @done (08-12-15 10:31)
-✔ Consulta a la api users para el logo estado. @done (08-12-15 10:32)
-✔ Status de los usuarios @done (08-12-15 10:32)
-✔ Si usuario conectado @done (08-12-15 10:32)
-✔ Mostrar conectado  @done (08-12-15 10:32)
-✔ Mostrar detalles @done (08-12-15 10:32)
-✔ Enlazar a su canal. @done (08-12-15 10:32)
-✔ Usuario no conectado @done (08-12-15 10:32)
-✔ Mostrar desconectado ! @done (08-12-15 10:32)
-✔ Mostrar lista al cargar página. @done (08-12-15 16:35)
-✔ verificar si esta conectado o no. @done (08-12-15 16:35)
-✔ no distinguir mayusculas @done (23-12-15 08:29)
-✔ Cambiar letra por icono en estado @done (23-12-15 08:47)
-☐ Filtro no actua al borrar con backspace
-☐ Documentar la APP
-☐ Limpiar y comentar archivos.
+  ✔ Registrar la app @done (01-12-15 17:28)
+  ✔ url de redirección puede ser localhost. @done (01-12-15 17:24)
+  ✔ clave publica  @done (01-12-15 17:24)
+  ✔ Formulario de busqueda usuarios @done (08-12-15 15:57)
+  ✔ ocultar los resultados que no coinciden @done (08-12-15 15:57)
+  ✔ Selector de all or streaming @done (08-12-15 10:31)
+  ✔ Consulta a la api users para el logo estado. @done (08-12-15 10:32)
+  ✔ Status de los usuarios @done (08-12-15 10:32)
+  ✔ Si usuario conectado @done (08-12-15 10:32)
+  ✔ Mostrar conectado  @done (08-12-15 10:32)
+  ✔ Mostrar detalles @done (08-12-15 10:32)
+  ✔ Enlazar a su canal. @done (08-12-15 10:32)
+  ✔ Usuario no conectado @done (08-12-15 10:32)
+  ✔ Mostrar desconectado ! @done (08-12-15 10:32)
+  ✔ Mostrar lista al cargar página. @done (08-12-15 16:35)
+  ✔ verificar si esta conectado o no. @done (08-12-15 16:35)
+  ✔ no distinguir mayusculas @done (23-12-15 08:29)
+  ✔ Cambiar letra por icono en estado @done (23-12-15 08:47)
+  ☐ Filtro no actua al borrar con backspace
+  ✔ Limpiar y comentar archivos. @done (23-12-15 12:50)
+  ☐ Readme en github
 
-
-Notas:
+Notas a la versión B:
   ☐ Streamers aparecen desordenados con respecto al array que los contiene.
+  ✔ Corregir el layout para moviles @done (18-01-16 20:09) (iphone 4, sansung, ipad 1)
+  ✔ Retoque de algunos puntos estéticos  @done (18-01-16 21:06)
+  ✔ Actualizar versión Codepen.io @done (18-01-16 21:20)

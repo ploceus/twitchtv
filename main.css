@@ -5,11 +5,7 @@
 }
 
 html {
-  background: #1E9952;
-  background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 35%, #207cca 66%, #7db9e8 100%);
-  background: -webkit-linear-gradient(left, #1e5799 0%, #2989d8 35%, #207cca 66%, #7db9e8 100%);
-  background: linear-gradient(to right, #1e5799 0%, #2989d8 35%, #207cca 66%, #7db9e8 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
+  background: #A0D36E;
   font-family: arial, 'sans serif';
   font-size: 18px;
   margin-left: calc(100vw - 100%);
@@ -26,9 +22,9 @@ ul {
 }
 
 .title {
-  color: #BA3771;
+  color: #a9071e;
   text-align: center;
-  text-shadow: 3px 3px 2px rgba(229, 186, 255, 1);
+  text-shadow: 3px 3px 2px rgba(255, 255, 255, 1);
   font-size: 2.5rem;
   margin: .2em 0;
 }
@@ -36,50 +32,64 @@ ul {
 
 .wrapper-app {
   margin: 0 auto;
-  width: 350px;
+  max-width: 450px;
 }
 
 .streamer-item {
   background-color: #ffe;
   border-radius: 5px;
-  /*border: 2px solid peru;*/
   box-shadow: 3px 3px 5px #444;
-  margin-bottom: 5px;
-  padding: .5rem;
+  margin: 0 auto;
+  padding: .5em;
+  margin-top: .5em;
+  width: 95%;
+  
+  font-size: 14px;
 }
-
-.wrapper-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.wrapper-details:hover {
+  background-color: #F8E9E9;
+  cursor: pointer;
 }
-
-
 .logo {
+  display: inline-block;
+  height: 50px;
   vertical-align: middle;
   width: 50px;
-  height: 50px;
 }
 
 .streamer-name {
   display: inline-block;
   font-size: 20px;
+  line-height: 50px;
   padding-left: .5em;
-  width: 300px;
 }
 
+.streamer-conn {
+  display: block;
+  float: right;
+  height: 50px;
+  margin-top: 11px;
+}
+
+
 .streamTitle {
-  background-color: #EB6E23;
+  background-color: #facb47;
   color: white;
   font-size: .8rem;
   padding-left: .5em;
   line-height: 1.2rem;
 }
 
+.streamTitle:hover {
+  background-color: #FA8547;
+}
+
 .selectors {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   margin-bottom: .3em;
+  width: 95%
 }
 
 .selector {
@@ -89,6 +99,8 @@ ul {
   flex-grow: 1;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: inline-block;
+  width: 33.222%
 }
 
 .selector:hover {
@@ -96,13 +108,20 @@ ul {
 }
 
 .selected {
-  background-color: #EB6E23;
+  background-color: #FACB47;
+}
+
+.search {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .search-streamer {
-  width: 100%;
   border-radius: 1em;
+  font-size: 16px;
   height: 2em;
   padding-left: 1em;
-  margin-bottom: 5px;
+  width: 100%;
 }
+
